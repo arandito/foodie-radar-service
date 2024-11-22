@@ -592,7 +592,7 @@ func AuthMiddleware(next http.HandlerFunc) http.HandlerFunc {
 func EnableCORS(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		// Set the specific origin instead of using a wildcard
-		w.Header().Set("Access-Control-Allow-Origin", "https://foodieradar.antonioaranda.dev")
+		w.Header().Set("Access-Control-Allow-Origin", "https://foodie.antoara.com")
 		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
 		w.Header().Set("Access-Control-Allow-Headers", "Content-Type, Authorization")
 		w.Header().Set("Access-Control-Allow-Credentials", "true")
